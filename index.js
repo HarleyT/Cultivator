@@ -1,5 +1,5 @@
-var width = 1024
-var height = 576
+var width = 1123
+var height = 794
 var canvas = document.getElementById('Cultivator');
 var ctx = canvas.getContext('2d');
 canvas.width = width
