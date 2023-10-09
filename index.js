@@ -9,4 +9,7 @@ ctx.fillRect(0, 0, canvas.width, canvas.height)
 
 const image = new Image()
 image.src = './img/Cultivator_Main.png'
-ctx.drawImage(image)
+
+image.onload = () => {
+    ctx.drawImage(image, 0, 0)
+}
