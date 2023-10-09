@@ -8,7 +8,7 @@ canvas.height = height
 var image = new Image();
 image.src="./img/Cultivator_Main.png";
 
-image.onload = function() => {
+image.onload = function() {
     let loadedImageWidth = image.width;
     let loadedImageHeight = image.height;
 
