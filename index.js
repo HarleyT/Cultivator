@@ -1,15 +1,14 @@
-const canvas = document.querySelector('canvas')
-const ctx = canvas.getContext('2d')
+var width = 1024
+var height = 576
+var canvas = document.getElementById('Cultivator');
+var ctx = canvas.getContext('2d');
+canvas.width = width
+canvas.height = height
 
-canvas.width = 1024
-canvas.height = 576
+var image = new Image();
+image.src="./img/Cultivator_Main.png";
 
-ctx.fillStyle = 'white'
-ctx.fillRect(0, 0, canvas.width, canvas.height)
-
-const image = new Image()
-image.src = './img/Cultivator_Main.png'
-
-image.onload = () => {
-    ctx.drawImage(image, 0, 0)
+image.onload = function() {
+    ctx.drawImage(image,0,0);
+    console.log('image loaded');
 }
